@@ -1,0 +1,11 @@
+node_modules/
+dist/
+out/
+release/
+_extracted/
+_analysis/
+.impeccable/
+_analysis_asar_list.txt
+_smoke*
+CeitoTweaks-Setup-*.exe
+*.tmp

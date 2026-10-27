@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>MuraTweaks</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4.5 13H11l-1 9L19.5 11H13l1-9Z"/></symbol>
+    <symbol id="i-gpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5" rx=".5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2.5 8.5a15 15 0 0 1 19 0M5.5 12a11 11 0 0 1 13 0M8.5 15.5a7 7 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24"><rect x="2.5" y="7.5" width="16" height="9" rx="2"/><path d="M21 10.5v3M6 10.5v3M9 10.5v3M12 10.5v3"/></symbol>
+    <symbol id="i-windows" viewBox="0 0 24 24"><path d="M3 4.5 11 3v8H3zM13 2.7 21 2v9h-8zM3 13h8v8l-8-1.5zM13 13h8v9l-8-1.7z"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 12h4M12 12h8M4 17h12M20 17h0"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="17" r="2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 12 9 5 9-5"/><path d="m3 16 9 5 9-5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5 20 6v6c0 5-3.5 8.5-8 9.5-4.5-1-8-4.5-8-9.5V6l8-3.5Z"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 2.5 20 6v6c0 5-3.5 8.5-8 9.5-4.5-1-8-4.5-8-9.5V6l8-3.5Z"/><path d="m8.5 12 2.3 2.3 4.7-4.6"/></symbol>
+    <symbol id="i-disk" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+    <symbol id="i-mouse" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="6"/><path d="M12 6v5"/></symbol>
+    <symbol id="i-circuit" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M8 6h8M6 8v4a2 2 0 0 0 2 2h2M18 8v4a2 2 0 0 1-2 2h-2M12 14v2"/></symbol>
+    <symbol id="i-gamepad" viewBox="0 0 24 24"><path d="M7 8h10a5 5 0 0 1 4.7 6.7l-.8 2a3 3 0 0 1-5.2.8L14 15h-4l-1.7 2.5a3 3 0 0 1-5.2-.8l-.8-2A5 5 0 0 1 7 8Z"/><path d="M8 11v3M6.5 12.5h3M15.5 11.5h.01M17.5 13.5h.01"/></symbol>
+    <symbol id="i-archive" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="4" rx="1"/><path d="M5 8v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/><path d="M10 12h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3 22 20H2L12 3Z"/><path d="M12 9v5"/><circle cx="12" cy="17" r=".6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-square" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="1"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <div class="app">
+    <header class="titlebar">
+      <div class="brand">
+        <svg class="brand-glyph" viewBox="0 0 32 32" aria-hidden="true">
+          <path class="glyph-hex" d="M16 2.5 28.5 9.7v12.6L16 29.5 3.5 22.3V9.7Z"/>
+          <path class="glyph-m" d="M10.5 21V11.5l5.5 4.6 5.5-4.6V21"/>
+        </svg>
+        <div class="brand-copy">
+          <span class="brand-word"><b>MURA</b>TWEAKS</span>
+          <span class="brand-sub">Windows optimizer</span>
+        </div>
+      </div>
+      <div class="titlebar-right">
+        <span id="admin-pill" class="pill pill-muted" role="status"><i class="pill-dot"></i><span id="admin-pill-text">Comprobando permisos...</span></span>
+        <div class="window-buttons">
+          <button id="win-min" class="win-btn" title="Minimizar" aria-label="Minimizar"><svg class="icon" aria-hidden="true"><use href="#i-minus"></use></svg></button>
+          <button id="win-max" class="win-btn" title="Maximizar" aria-label="Maximizar"><svg class="icon" aria-hidden="true"><use href="#i-square"></use></svg></button>
+          <button id="win-close" class="win-btn win-close" title="Cerrar" aria-label="Cerrar"><svg class="icon" aria-hidden="true"><use href="#i-x"></use></svg></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="shell">
+      <aside class="sidebar">
+        <nav id="nav" aria-label="Secciones"></nav>
+        <div class="sidebar-foot">
+          <div class="foot-badge">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield-check"></use></svg>
+            <span>Sin telemetria</span>
+          </div>
+          <p>Sin cuentas. Sin red.</p>
+          <span id="version" class="mono"></span>
+        </div>
+      </aside>
+
+      <main class="content">
+        <div id="admin-banner" class="banner" hidden>
+          <svg class="icon banner-icon" aria-hidden="true"><use href="#i-alert"></use></svg>
+          <div class="banner-text">
+            <strong>Sin permisos de administrador.</strong>
+            <span>Muchos ajustes no se van a poder aplicar hasta reiniciar la app elevada.</span>
+          </div>
+          <button id="elevate-btn" class="btn btn-amber">Reiniciar como administrador</button>
+        </div>
+
+        <section id="view-optimize" class="view">
+          <header class="view-head">
+            <div class="head-copy">
+              <h1 id="view-title">Optimizar</h1>
+              <p id="view-subtitle">Ajustes de rendimiento, latencia, GPU, red y privacidad.</p>
+            </div>
+            <div class="tools">
+              <label class="search-box">
+                <svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>
+                <input id="search" type="search" placeholder="Buscar ajuste..." autocomplete="off" aria-label="Buscar ajuste">
+              </label>
+              <label class="select-box">
+                <select id="risk-filter" aria-label="Filtrar por riesgo">
+                  <option value="all">Todos los riesgos</option>
+                  <option value="seguro">Solo seguros</option>
+                  <option value="moderado">Solo moderados</option>
+                  <option value="riesgoso">Solo riesgosos</option>
+                </select>
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg>
+              </label>
+            </div>
+          </header>
+          <div class="toolbar">
+            <span id="count" class="count mono"></span>
+            <span class="toolbar-line"></span>
+          </div>
+          <div id="grid" class="grid"></div>
+          <p id="empty" class="empty" hidden>No hay ajustes que coincidan con el filtro.</p>
+        </section>
+
+        <section id="view-backups" class="view" hidden>
+          <header class="view-head">
+            <div class="head-copy">
+              <h1>Backups</h1>
+              <p>Deshace cambios y guarda un punto de restauracion del sistema.</p>
+            </div>
+          </header>
+
+          <div class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Cambios aplicados</h2>
+                <p>Cada ajuste guarda los valores anteriores antes de tocarlos.</p>
+              </div>
+              <button id="undo-all" class="btn btn-ghost">Deshacer todo</button>
+            </div>
+            <div id="applied-list" class="list"></div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Punto de restauracion</h2>
+                <p>Respaldo completo del sistema antes de cambios grandes. Puede tardar varios minutos y Windows limita la frecuencia.</p>
+              </div>
+            </div>
+            <div class="row-actions">
+              <button id="create-restore" class="btn">Crear punto de restauracion</button>
+              <button id="open-restore" class="btn btn-ghost">Abrir Restaurar sistema</button>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <div>
+                <h2>Backups guardados</h2>
+                <p>Valores guardados por cada aplicacion. Restaurar devuelve solo el registro; los scripts se deshacen con Revertir.</p>
+              </div>
+            </div>
+            <div id="backup-list" class="list"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <h2 id="modal-title"></h2>
+      <div id="modal-body" class="modal-body"></div>
+      <div class="modal-actions">
+        <button id="modal-cancel" class="btn btn-ghost">Cancelar</button>
+        <button id="modal-confirm" class="btn">Continuar</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
